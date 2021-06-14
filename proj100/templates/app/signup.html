@@ -1,0 +1,16 @@
+{% extends 'app/base.html' %}
+
+{% block main_block %}
+<h1>Signup Page</h1>
+<hr />
+<table border="1" width="50%" align="center">
+	<form method="POST">
+			{{form.as_p}}
+			{% csrf_token %}
+			<input type="submit" value="Signup" />
+	</form>
+</table>
+
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'app/base.html' %}
+
+{% block main_block %}
+<form method="POST">
+
+{{form.as_p}}
+{% csrf_token %}
+
+<input type="submit" value="login" />
+<a href="/app/change-password/">Change Password</a>
+</form>
+
+
+{% endblock %}

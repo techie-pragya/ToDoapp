@@ -1,0 +1,48 @@
+<!doctype html>
+
+{% load staticfiles %}
+<html lang="en">
+ <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}"/>
+
+  <title>Document</title>
+ </head>
+ <body>
+ <div id="container">
+  <div id="header">
+	
+	<span id ="art1"><img  id="art" src="{% static 'images/art.png' %}"/></span>
+	<a href="/app/home" id="logo">Creative_you</a>
+	<span id="control">
+		
+		<a href="/accounts/login">login</a>&nbsp;&nbsp;
+		<a href="/accounts/logout">logout</a>&nbsp;&nbsp;
+		<a href="/app/signup">Signup</a>&nbsp;&nbsp;
+		<a href="/app/profile">Profile</a>&nbsp;&nbsp;
+		
+	</span>
+	</div>
+
+	<div id="main_block">
+	{% block main_block %}
+	
+
+	{% endblock %}
+	</div>
+
+	<div id="footer">
+		<span id="links">
+			<a href="/app/aboutus">About Us</a>&nbsp;&nbsp;
+			<a href="/app/contact">Contact</a>&nbsp;&nbsp;
+			<a href="/app/home">Home</a>&nbsp;&nbsp;
+			
+	
+	
+		</span>
+
+		<span id="footer_text">&copy;Creative_you Since 2020</span>
+	</div>
+
+	</div>
+ </body>
+</html>
